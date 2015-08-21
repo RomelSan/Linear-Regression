@@ -6,7 +6,9 @@ Online Demo: [Link](http://www.logicminds.net/GitHub/regression/)
 #### Features
 - [x] Solve Linear Regression
 - [x] Solve Non Linear Regression
+- [x] Show Main Solving Procedure
 - [x] Plot
+- [x] HTML 5, Bootstrap Responsive
 
 ### Basic Usage
 

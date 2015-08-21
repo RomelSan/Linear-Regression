@@ -152,7 +152,7 @@ echo "
 `sum_(i=1)^nx_iy_i=$sum_xy`
 </p>
 <p style=\"text-align:center\">
-  `a=((n)(sum_(i=1)^nx_iy_i)-(sum_(i=1)^nx_i)(sum_(i=1)^ny_i))/((n)(sum_(i=1)^nx_i^2)-(x_i)^2)`
+  `a=((n)(sum_(i=1)^nx_iy_i)-(sum_(i=1)^nx_i)(sum_(i=1)^ny_i))/((n)(sum_(i=1)^nx_i^2)-(sum_(i=1)^nx_i)^2)`
   <br>
   <br>
   `a=(($n)($sum_xy)-($sum_x)($sum_y))/(($n)($sum_xx)-($sum_x2))`
