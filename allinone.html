@@ -41,10 +41,10 @@
 		<div class="collapse navbar-collapse" id="menu-principal">
 			<ul class="nav navbar-nav">
 				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp&nbspHome <span class="sr-only">(current)</span></a></li>
-				<li><a href="allinone.html"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>&nbsp&nbspSolve All</a></li>
+				<li class="active"><a href="allinone.html"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>&nbsp&nbspSolve All</a></li>
 				<li><a href="linear.html"><span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>&nbsp&nbspLinear</a></li>
 				<li><a href="nonlinear.html"><span class="glyphicon glyphicon-random" aria-hidden="true"></span>&nbsp&nbspNon Linear</a></li>
-				<li class="active"><a href="plot.html"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>&nbsp&nbspPlot</a></li>
+				<li><a href="plot.html"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>&nbsp&nbspPlot</a></li>			
 			</ul>
 		</div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
@@ -53,7 +53,7 @@
 <br><br><br><br>
 
 <div class="container">
-<form role="form" method="post" action="plot.php" target="_blank">
+<form role="form" method="post" action="linear.php" target="_blank">
     <div class="input-group col-md-8">
 		<span class="input-group-addon" id="basic-addon1">X</span>
 		<input name="Xf" id="Xf" type="text" class="form-control" placeholder="" aria-describedby="basic-addon1" value="2,5,7,9,11" pattern="[0-9,.-]{3,}">
@@ -63,15 +63,23 @@
 		<span class="input-group-addon" id="basic-addon1">Y</span>
 		<input name="Yf" id="Yf" type="text" class="form-control" placeholder="" aria-describedby="basic-addon1" value="1,2,6,12,17" pattern="[0-9,.-]{3,}">
 	</div>
+	<br>
 	<div class="input-group col-md-8">
+		<span class="input-group-addon" id="basic-addon1">Find</span>
+		<input name="Find" id="Find" type="text" class="form-control" placeholder="" aria-describedby="basic-addon1" value="4" pattern="[0-9.-]{1,}">
+	</div>
+	<br>
+	  <button type="submit" class="btn btn-default" formaction="linear.php" formmethod="post" formtarget="_blank">Solve Linear Regression</button>
+	  <button type="submit" class="btn btn-default" formaction="nonlinear.php" formmethod="post" formtarget="_blank">Solve Non Linear Regression</button>
+	  <div class="input-group col-md-8">
 		 <div class="radio">
-			<label><input type="radio" name="Regression" value="Linear" Checked>Linear</label>
+			<label><input type="radio" name="Regression" value="Linear" Checked>Plot Linear</label>
 		</div>
 		<div class="radio">
-			<label><input type="radio" name="Regression" value="NonLinear">Non Linear</label>
+			<label><input type="radio" name="Regression" value="NonLinear">Plot Non Linear</label>
 		</div>
-	</div>
-	<button type="submit" class="btn btn-default">Plot</button>
+	</div>	  
+	  <button type="submit" class="btn btn-default" formaction="plot.php" formmethod="post" formtarget="_blank">Plot</button>
 </form>
 	
 </div>

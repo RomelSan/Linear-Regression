@@ -66,6 +66,11 @@ $Findx=$_POST['Find'];
 $x=explode(",", $Xf);  // X Variable into Array
 $y=explode(",", $Yf); // Y Variable into Array
 
+if (count($x) != count($y)) //Check that number of elements are exact for X and Y
+{
+	die("Number of elements in X does not equal number of elements in Y");
+}
+
 // Check for numbers only
 foreach ($x as $testcase)  // X values
 	{

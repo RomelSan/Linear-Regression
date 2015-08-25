@@ -41,6 +41,7 @@
 		<div class="collapse navbar-collapse" id="menu-principal">
 			<ul class="nav navbar-nav">
 				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp&nbspHome <span class="sr-only">(current)</span></a></li>
+				<li><a href="allinone.html"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>&nbsp&nbspSolve All</a></li>
 				<li><a href="linear.html"><span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span>&nbsp&nbspLinear</a></li>
 				<li class="active"><a href="nonlinear.html"><span class="glyphicon glyphicon-random" aria-hidden="true"></span>&nbsp&nbspNon Linear</a></li>
 				<li><a href="plot.html"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>&nbsp&nbspPlot</a></li>
@@ -55,17 +56,17 @@
 <form role="form" method="post" action="nonlinear.php" target="_blank">
     <div class="input-group col-md-8">
 		<span class="input-group-addon" id="basic-addon1">X</span>
-		<input name="Xf" id="Xf" type="text" class="form-control" placeholder="" aria-describedby="basic-addon1" value="2,5,7,9,11">
+		<input name="Xf" id="Xf" type="text" class="form-control" placeholder="" aria-describedby="basic-addon1" value="2,5,7,9,11" pattern="[0-9,.-]{3,}">
 	</div>
 	<br>
 	<div class="input-group col-md-8">
 		<span class="input-group-addon" id="basic-addon1">Y</span>
-		<input name="Yf" id="Yf" type="text" class="form-control" placeholder="" aria-describedby="basic-addon1" value="1,2,6,12,17">
+		<input name="Yf" id="Yf" type="text" class="form-control" placeholder="" aria-describedby="basic-addon1" value="1,2,6,12,17" pattern="[0-9,.-]{3,}">
 	</div>
 	<br>
 	<div class="input-group col-md-8">
 		<span class="input-group-addon" id="basic-addon1">Find</span>
-		<input name="Find" id="Find" type="text" class="form-control" placeholder="" aria-describedby="basic-addon1" value="4">
+		<input name="Find" id="Find" type="text" class="form-control" placeholder="" aria-describedby="basic-addon1" value="4" pattern="[0-9.-]{1,}">
 	</div>
 	<br>
 	  <button type="submit" class="btn btn-default">Solve Non Linear Regression</button>
