@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Linear Regression</title>
-		<script type="text/javascript" src="js/ASCIIMathML.js"></script>
+		<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
 		<!-- Bootstrap -->
 			<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 

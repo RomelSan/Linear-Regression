@@ -21,7 +21,7 @@
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript"src="js/jquery.flot.min.js"></script>
 		<script type="text/javascript"src="js/regression.min.js"></script>
-		<script type="text/javascript" src="js/ASCIIMathML.js"></script>
+		<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
 		<style>
 			html, body{
 				margin: 0;
