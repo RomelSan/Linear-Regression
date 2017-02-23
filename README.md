@@ -1,7 +1,7 @@
 # Linear-Regression
 Solve Linear and Non Linear Reggresion  
 For PHP.  
-Online Demo: [Link](http://www.logicminds.net/GitHub/regression/)
+Online Demo: [Link](https://www.romelvera.com/github/regression/)
 
 #### Features
 - [x] Solve Linear Regression
